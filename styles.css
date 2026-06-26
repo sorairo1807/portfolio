@@ -497,6 +497,13 @@ svg {
   font-size: 13px;
 }
 
+.contact-mail {
+  margin-top: 16px;
+  color: var(--color-muted);
+  font-size: 15px;
+  font-weight: 700;
+}
+
 @media (max-width: 1080px) {
   .section {
     padding: 72px 0;
