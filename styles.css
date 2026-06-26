@@ -474,7 +474,7 @@ svg {
   text-align: center;
 }
 
-.contact-inner p:not(.eyebrow) {
+.contact-inner p:not(.eyebrow):not(.contact-mail) {
   margin: 24px auto 0;
   color: var(--color-muted);
   font-size: 17px;
