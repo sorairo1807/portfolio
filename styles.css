@@ -74,7 +74,7 @@ h2 { display: flex; align-items: baseline; gap: 24px; font-weight: 400; flex-wra
 .about-band { background: #f4f8f7; }
 .about-layout { display: grid; grid-template-columns: 270px minmax(0, 1fr); gap: 74px; align-items: start; }
 .profile img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 3px; }
-.profile figcaption { padding-top: 20px; }
+.profile figcaption { padding-top: 20px; text-align: center;}
 .profile figcaption > span { font-family: var(--serif); font-size: 23px; }
 .profile figcaption small { display: block; margin-top: 4px; color: var(--muted); font: 12px/1.6 var(--serif); }
 .profile-text h3 { font-family: var(--serif); font-size: 26px; font-weight: 500; line-height: 1.8; margin-bottom: 26px; }
