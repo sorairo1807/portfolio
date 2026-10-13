@@ -10,24 +10,56 @@
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="ja_JP" />
     <link rel="icon" href="assets/site-icon.png" type="image/png" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=20261013-2" />
     <link rel="preload" as="image" href="assets/marketing-workspace.png" media="(min-width: 701px)" />
-    <script defer src="assets/lucide.min.js"></script>
-    <script defer src="script.js"></script>
+    <script defer src="script.js?v=20261013-2"></script>
   </head>
+
   <body>
     <a class="skip-link" href="#main">本文へ</a>
+
     <header class="site-header" id="top">
       <div class="header-inner">
         <a class="brand" href="#top" aria-label="そらいろ ホーム">
           <img src="assets/sorairo-logo.png" alt="そらいろ" width="1000" height="700" />
         </a>
-        <button class="menu-toggle icon-button" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="メニューを開く" title="メニューを開く"><i data-lucide="menu" aria-hidden="true"></i></button>
+
+        <button
+          class="menu-toggle icon-button"
+          type="button"
+          aria-expanded="false"
+          aria-controls="main-nav"
+          aria-label="メニューを開く"
+          title="メニューを開く"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu" aria-hidden="true" focusable="false">
+            <line x1="4" x2="20" y1="12" y2="12"></line>
+            <line x1="4" x2="20" y1="6" y2="6"></line>
+            <line x1="4" x2="20" y1="18" y2="18"></line>
+          </svg>
+        </button>
+
         <nav class="main-nav" id="main-nav" aria-label="メインナビゲーション">
-          <a href="#works"><span lang="en">Works</span><small>実績</small></a>
-          <a href="#about"><span lang="en">About</span><small>プロフィール</small></a>
-          <a href="#services"><span lang="en">Service</span><small>支援できること</small></a>
-          <a class="nav-contact" href="#contact"><span lang="en">Contact</span><small>お問い合わせ</small><i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a href="#works">
+            <span lang="en">Works</span>
+            <small>実績</small>
+          </a>
+          <a href="#about">
+            <span lang="en">About</span>
+            <small>プロフィール</small>
+          </a>
+          <a href="#services">
+            <span lang="en">Service</span>
+            <small>支援できること</small>
+          </a>
+          <a class="nav-contact" href="#contact">
+            <span lang="en">Contact</span>
+            <small>お問い合わせ</small>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true" focusable="false">
+              <path d="M7 7h10v10"></path>
+              <path d="M7 17 17 7"></path>
+            </svg>
+          </a>
         </nav>
       </div>
     </header>
@@ -36,69 +68,328 @@
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-inner container">
           <p class="eyebrow" lang="en">SORAIRO / MARKETING &amp; CONTENT</p>
-          <h1 id="hero-title">成果につながる<br /><span>導線を設計します。</span></h1>
-          <p class="hero-lead">コミュニティやスクールなどの無形商材を中心に、<br class="desktop-break" />集客〜販売までを一連の流れとして設計・改善します。</p>
-          <a class="button" href="#contact">お問い合わせ<i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
-          <div class="hero-bottom"><a href="#works" aria-label="実績を見る"><span lang="en">SCROLL</span><i data-lucide="arrow-down" aria-hidden="true"></i></a></div>
+
+          <h1 id="hero-title">
+            成果につながる<br />
+            <span>導線を設計します。</span>
+          </h1>
+
+          <p class="hero-lead">
+            コミュニティやスクールなどの無形商材を中心に、<br class="desktop-break" />
+            集客〜販売までを一連の流れとして設計・改善します。
+          </p>
+
+          <a class="button" href="#contact">
+            お問い合わせ
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true" focusable="false">
+              <path d="M7 7h10v10"></path>
+              <path d="M7 17 17 7"></path>
+            </svg>
+          </a>
+
+          <div class="hero-bottom">
+            <a href="#works" aria-label="実績を見る">
+              <span lang="en">SCROLL</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down" aria-hidden="true" focusable="false">
+                <path d="M12 5v14"></path>
+                <path d="m19 12-7 7-7-7"></path>
+              </svg>
+            </a>
+          </div>
         </div>
       </section>
 
       <section class="section container works-section" id="works" aria-labelledby="works-title">
-        <div class="section-heading"><h2 id="works-title"><span class="title-en" lang="en">Works</span><span class="title-ja">実績</span></h2></div>
+        <div class="section-heading">
+          <h2 id="works-title">
+            <span class="title-en" lang="en">Works</span>
+            <span class="title-ja">実績</span>
+          </h2>
+        </div>
+
         <div class="works-grid">
           <article class="work-card work-cyan">
-            <div class="work-result"><span class="work-number">01</span><i data-lucide="rocket" aria-hidden="true"></i><p><strong>1,000<span>万円</span></strong><span class="result-label">売上に貢献</span></p></div>
-            <div class="work-body"><span class="work-category" lang="en">X / LAUNCH</span><h3>Xローンチ</h3><p>Xローンチにて、1,000万円の売上に貢献。</p></div>
+            <div class="work-result">
+              <span class="work-number">01</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket" aria-hidden="true" focusable="false">
+                <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
+                <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path>
+                <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+                <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+              </svg>
+              <p>
+                <strong>1,000<span>万円</span></strong>
+                <span class="result-label">売上に貢献</span>
+              </p>
+            </div>
+            <div class="work-body">
+              <span class="work-category" lang="en">X / LAUNCH</span>
+              <h3>Xローンチ</h3>
+              <p>Xローンチにて、1,000万円の売上に貢献。</p>
+            </div>
           </article>
+
           <article class="work-card work-coral">
-            <div class="work-result"><span class="work-number">02</span><i data-lucide="instagram" aria-hidden="true"></i><p><strong>500<span>万円</span></strong><span class="result-label">売上に貢献</span></p></div>
-            <div class="work-body"><span class="work-category" lang="en">INSTAGRAM / LAUNCH</span><h3>Instagramローンチ</h3><p>Instagramローンチにて、500万円の売上に貢献。</p></div>
+            <div class="work-result">
+              <span class="work-number">02</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram" aria-hidden="true" focusable="false">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+              </svg>
+              <p>
+                <strong>500<span>万円</span></strong>
+                <span class="result-label">売上に貢献</span>
+              </p>
+            </div>
+            <div class="work-body">
+              <span class="work-category" lang="en">INSTAGRAM / LAUNCH</span>
+              <h3>Instagramローンチ</h3>
+              <p>Instagramローンチにて、500万円の売上に貢献。</p>
+            </div>
           </article>
+
           <article class="work-card work-mint">
-            <div class="work-result"><span class="work-number">03</span><i data-lucide="messages-square" aria-hidden="true"></i><p><strong>150<span>名 / 月</span></strong><span class="result-label">個別相談へ誘導</span></p></div>
-            <div class="work-body"><span class="work-category" lang="en">ENGLISH / CONSULTATION</span><h3>英語発音領域</h3><p>月150名規模の個別相談誘導を支援。</p></div>
+            <div class="work-result">
+              <span class="work-number">03</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-messages-square" aria-hidden="true" focusable="false">
+                <path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2z"></path>
+                <path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"></path>
+              </svg>
+              <p>
+                <strong>150<span>名 / 月</span></strong>
+                <span class="result-label">個別相談へ誘導</span>
+              </p>
+            </div>
+            <div class="work-body">
+              <span class="work-category" lang="en">ENGLISH / CONSULTATION</span>
+              <h3>英語発音領域</h3>
+              <p>月150名規模の個別相談誘導を支援。</p>
+            </div>
           </article>
+
           <article class="work-card work-mint">
-            <div class="work-result"><span class="work-number">04</span><i data-lucide="trophy" aria-hidden="true"></i><p><strong>1<span>位</span></strong><span class="result-label">ジャンル別ランキング</span></p></div>
-            <div class="work-body"><span class="work-category" lang="en">BRAIN / CONTENT</span><h3>Brainコンテンツ販売</h3><p>Brainコンテンツ販売で、ジャンル別1位を獲得。</p></div>
+            <div class="work-result">
+              <span class="work-number">04</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trophy" aria-hidden="true" focusable="false">
+                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                <path d="M4 22h16"></path>
+                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
+                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
+                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
+              </svg>
+              <p>
+                <strong>1<span>位</span></strong>
+                <span class="result-label">ジャンル別ランキング</span>
+              </p>
+            </div>
+            <div class="work-body">
+              <span class="work-category" lang="en">BRAIN / CONTENT</span>
+              <h3>Brainコンテンツ販売</h3>
+              <p>Brainコンテンツ販売で、ジャンル別1位を獲得。</p>
+            </div>
           </article>
+
           <article class="work-card work-cyan">
-            <div class="work-result"><span class="work-number">05</span><i data-lucide="users" aria-hidden="true"></i><p><strong>1,100<span>名超 / 月</span></strong><span class="result-label">セミナーへ誘導</span></p></div>
-            <div class="work-body"><span class="work-category" lang="en">AI / SEMINAR</span><h3>AI領域セミナー誘導</h3><p>月1,100名超のセミナー誘導を達成。</p></div>
+            <div class="work-result">
+              <span class="work-number">05</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users" aria-hidden="true" focusable="false">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+              <p>
+                <strong>1,100<span>名超 / 月</span></strong>
+                <span class="result-label">セミナーへ誘導</span>
+              </p>
+            </div>
+            <div class="work-body">
+              <span class="work-category" lang="en">AI / SEMINAR</span>
+              <h3>AI領域セミナー誘導</h3>
+              <p>月1,100名超のセミナー誘導を達成。</p>
+            </div>
           </article>
+
           <article class="work-card work-coral">
-            <div class="work-result"><span class="work-number">06</span><i data-lucide="book-open" aria-hidden="true"></i><p><strong class="text-result">教材制作</strong><span class="result-label">高単価コンテンツ</span></p></div>
-            <div class="work-body"><span class="work-category" lang="en">LEARNING / CONTENT</span><h3>教材・コンテンツ制作</h3><p>複数の高単価コンテンツの作成経験。</p></div>
+            <div class="work-result">
+              <span class="work-number">06</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open" aria-hidden="true" focusable="false">
+                <path d="M12 7v14"></path>
+                <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path>
+              </svg>
+              <p>
+                <strong class="text-result">教材制作</strong>
+                <span class="result-label">高単価コンテンツ</span>
+              </p>
+            </div>
+            <div class="work-body">
+              <span class="work-category" lang="en">LEARNING / CONTENT</span>
+              <h3>教材・コンテンツ制作</h3>
+              <p>複数の高単価コンテンツの作成経験。</p>
+            </div>
           </article>
         </div>
       </section>
 
       <section class="about-band" id="about" aria-labelledby="about-title">
         <div class="section container">
-          <div class="section-heading"><h2 id="about-title"><span class="title-en" lang="en">About</span><span class="title-ja">プロフィール</span></h2></div>
+          <div class="section-heading">
+            <h2 id="about-title">
+              <span class="title-en" lang="en">About</span>
+              <span class="title-ja">プロフィール</span>
+            </h2>
+          </div>
+
           <div class="about-layout">
-            <figure class="profile"><img src="assets/profile-photo.jpg" alt="屋外で座るそらいろのプロフィール写真" width="240" height="320" loading="lazy" /><figcaption><span>そらいろ</span><small lang="en">Marketing &amp; Content Partner</small></figcaption></figure>
-            <div class="profile-text"><h3>想いを、届くかたちに。<br />集客から販売まで、伴走します。</h3><p>2020年3月に大学を卒業し、4月より地元静岡のIT企業に入社。HP制作やツールを使った業務効率化などの業務に従事しました。</p><p>2022年2月に退職後、フリーランスとして活動を開始。SNSマーケティングや動画編集事業に携わり、SNS運用、公式LINE運用、メルマガ運用、コンテンツ制作、導線設計などを中心に支援しています。</p><p>趣味は、スポーツ観戦やビール、漫画を読むことです。<br />今年の目標は、できるだけ多くのグルメを楽しむこと。美味しい食べ物を巡ることに夢中になっています。</p></div>
+            <figure class="profile">
+              <img src="assets/profile-photo.jpg" alt="屋外で座るそらいろのプロフィール写真" width="240" height="320" loading="lazy" />
+              <figcaption>
+                <span>そらいろ</span>
+                <small lang="en">Marketing &amp; Content Partner</small>
+              </figcaption>
+            </figure>
+
+            <div class="profile-text">
+              <h3>
+                想いを、届くかたちに。<br />
+                集客から販売まで、伴走します。
+              </h3>
+              <p>2020年3月に大学を卒業し、4月より地元静岡のIT企業に入社。HP制作やツールを使った業務効率化などの業務に従事しました。</p>
+              <p>2022年2月に退職後、フリーランスとして活動を開始。SNSマーケティングや動画編集事業に携わり、SNS運用、公式LINE運用、メルマガ運用、コンテンツ制作、導線設計などを中心に支援しています。</p>
+              <p>
+                趣味は、スポーツ観戦やビール、漫画を読むことです。<br />
+                今年の目標は、できるだけ多くのグルメを楽しむこと。美味しい食べ物を巡ることに夢中になっています。
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="section container services-section" id="services" aria-labelledby="services-title">
-        <div class="section-heading"><h2 id="services-title"><span class="title-en" lang="en">Service</span><span class="title-ja">支援できること</span></h2></div>
+        <div class="section-heading">
+          <h2 id="services-title">
+            <span class="title-en" lang="en">Service</span>
+            <span class="title-ja">支援できること</span>
+          </h2>
+        </div>
+
         <div class="service-list">
-          <article class="service-row"><span class="service-number">01</span><div class="service-title"><i data-lucide="send" aria-hidden="true"></i><h3>SNS運用</h3><small lang="en">Social Media</small></div><div class="service-description"><p>Xを中心に、投稿企画・ライティング・数値確認・改善提案まで対応します。投稿単体ではなく、LINE登録やセミナー誘導など、次の行動につながる運用を意識しています。</p><div class="service-tags"><span>投稿企画</span><span>ライティング</span><span>分析・改善</span></div></div></article>
-          <article class="service-row"><span class="service-number">02</span><div class="service-title"><i data-lucide="message-circle" aria-hidden="true"></i><h3>公式LINE運用</h3><small lang="en">LINE Marketing</small></div><div class="service-description"><p>LINE登録後のあいさつメッセージ、ステップ配信、教育配信、セミナー誘導、個別相談誘導まで対応します。登録して終わりではなく、申込や相談につながる流れを設計します。</p><div class="service-tags"><span>ステップ配信</span><span>教育配信</span><span>相談・申込導線</span></div></div></article>
-          <article class="service-row"><span class="service-number">03</span><div class="service-title"><i data-lucide="book-open" aria-hidden="true"></i><h3>教材制作</h3><small lang="en">Learning Content</small></div><div class="service-description"><p>講座、スクール、コンテンツ販売などにおける教材制作をサポートします。ユーザーの悩みや理解度に合わせて、学びやすく、行動につながるコンテンツ構成・文章作成を行います。</p><div class="service-tags"><span>コンテンツ構成</span><span>文章作成</span><span>教材制作</span></div></div></article>
+          <article class="service-row">
+            <span class="service-number">01</span>
+            <div class="service-title">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send" aria-hidden="true" focusable="false">
+                <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path>
+                <path d="m21.854 2.147-10.94 10.939"></path>
+              </svg>
+              <h3>SNS運用</h3>
+              <small lang="en">Social Media</small>
+            </div>
+            <div class="service-description">
+              <p>Xを中心に、投稿企画・ライティング・数値確認・改善提案まで対応します。投稿単体ではなく、LINE登録やセミナー誘導など、次の行動につながる運用を意識しています。</p>
+              <div class="service-tags">
+                <span>投稿企画</span>
+                <span>ライティング</span>
+                <span>分析・改善</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-row">
+            <span class="service-number">02</span>
+            <div class="service-title">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle" aria-hidden="true" focusable="false">
+                <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+              </svg>
+              <h3>公式LINE運用</h3>
+              <small lang="en">LINE Marketing</small>
+            </div>
+            <div class="service-description">
+              <p>LINE登録後のあいさつメッセージ、ステップ配信、教育配信、セミナー誘導、個別相談誘導まで対応します。登録して終わりではなく、申込や相談につながる流れを設計します。</p>
+              <div class="service-tags">
+                <span>ステップ配信</span>
+                <span>教育配信</span>
+                <span>相談・申込導線</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-row">
+            <span class="service-number">03</span>
+            <div class="service-title">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open" aria-hidden="true" focusable="false">
+                <path d="M12 7v14"></path>
+                <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path>
+              </svg>
+              <h3>教材制作</h3>
+              <small lang="en">Learning Content</small>
+            </div>
+            <div class="service-description">
+              <p>講座、スクール、コンテンツ販売などにおける教材制作をサポートします。ユーザーの悩みや理解度に合わせて、学びやすく、行動につながるコンテンツ構成・文章作成を行います。</p>
+              <div class="service-tags">
+                <span>コンテンツ構成</span>
+                <span>文章作成</span>
+                <span>教材制作</span>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
 
       <section class="contact-band" id="contact" aria-labelledby="contact-title">
         <div class="section container contact-layout">
-          <div><h2 id="contact-title"><span class="title-en" lang="en">Contact</span><span class="title-ja">お問い合わせ</span></h2><p class="contact-catch">次の一歩を、<br />一緒につくりませんか。</p></div>
-          <div class="contact-content"><p>SNS運用、公式LINE運用、教材制作、マーケティング導線の設計・改善など、お気軽にご相談ください。</p><a class="button" href="mailto:kkawanabe@srir.jp?subject=%E3%83%9D%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%AA%E3%82%AA%E3%82%B5%E3%82%A4%E3%83%88%E3%81%8B%E3%82%89%E3%81%AE%E3%81%94%E7%9B%B8%E8%AB%87">ご相談はこちら<i data-lucide="arrow-up-right" aria-hidden="true"></i></a><p class="mail-note">メール画面に遷移しない場合は、下記までご連絡ください。</p><div class="email-row"><a href="mailto:kkawanabe@srir.jp?subject=%E3%83%9D%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%AA%E3%82%AA%E3%82%B5%E3%82%A4%E3%83%88%E3%81%8B%E3%82%89%E3%81%AE%E3%81%94%E7%9B%B8%E8%AB%87">kkawanabe@srir.jp</a><button class="icon-button copy-email" type="button" aria-label="メールアドレスをコピー" title="メールアドレスをコピー"><i data-lucide="copy" aria-hidden="true"></i></button></div><p class="copy-status" role="status" aria-live="polite"></p></div>
+          <div>
+            <h2 id="contact-title">
+              <span class="title-en" lang="en">Contact</span>
+              <span class="title-ja">お問い合わせ</span>
+            </h2>
+            <p class="contact-catch">
+              次の一歩を、<br />
+              一緒につくりませんか。
+            </p>
+          </div>
+
+          <div class="contact-content">
+            <p>SNS運用、公式LINE運用、教材制作、マーケティング導線の設計・改善など、お気軽にご相談ください。</p>
+
+            <a class="button" href="mailto:kkawanabe@srir.jp?subject=%E3%83%9D%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%AA%E3%82%AA%E3%82%B5%E3%82%A4%E3%83%88%E3%81%8B%E3%82%89%E3%81%AE%E3%81%94%E7%9B%B8%E8%AB%87">
+              ご相談はこちら
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true" focusable="false">
+                <path d="M7 7h10v10"></path>
+                <path d="M7 17 17 7"></path>
+              </svg>
+            </a>
+
+            <p class="mail-note">メール画面に遷移しない場合は、下記までご連絡ください。</p>
+
+            <div class="email-row">
+              <a href="mailto:kkawanabe@srir.jp?subject=%E3%83%9D%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%AA%E3%82%AA%E3%82%B5%E3%82%A4%E3%83%88%E3%81%8B%E3%82%89%E3%81%AE%E3%81%94%E7%9B%B8%E8%AB%87">kkawanabe@srir.jp</a>
+              <button class="icon-button copy-email" type="button" aria-label="メールアドレスをコピー" title="メールアドレスをコピー">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy" aria-hidden="true" focusable="false">
+                  <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                  <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                </svg>
+              </button>
+            </div>
+
+            <p class="copy-status" role="status" aria-live="polite"></p>
+          </div>
         </div>
       </section>
     </main>
-    <footer class="site-footer container"><a class="brand" href="#top" aria-label="そらいろ ページの先頭へ"><img src="assets/sorairo-logo.png" alt="そらいろ" width="1000" height="700" loading="lazy" /></a><small lang="en">&copy; Sorairo. All rights reserved.</small><a class="back-top icon-button" href="#top" aria-label="ページの先頭へ" title="ページの先頭へ"><i data-lucide="arrow-up" aria-hidden="true"></i></a></footer>
+
+    <footer class="site-footer container">
+      <a class="brand" href="#top" aria-label="そらいろ ページの先頭へ">
+        <img src="assets/sorairo-logo.png" alt="そらいろ" width="1000" height="700" loading="lazy" />
+      </a>
+      <small lang="en">&copy; Sorairo. All rights reserved.</small>
+      <a class="back-top icon-button" href="#top" aria-label="ページの先頭へ" title="ページの先頭へ">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up" aria-hidden="true" focusable="false">
+          <path d="m5 12 7-7 7 7"></path>
+          <path d="M12 19V5"></path>
+        </svg>
+      </a>
+    </footer>
   </body>
 </html>
