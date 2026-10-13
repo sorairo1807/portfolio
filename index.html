@@ -3,281 +3,102 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>そらいろポートフォリオ</title>
-    <meta
-      name="description"
-      content="コミュニティやスクールなどの無形商材を中心に、集客から販売までの導線を設計・改善するポートフォリオサイトです。"
-    />
-    <meta property="og:title" content="そらいろポートフォリオ" />
-    <meta
-      property="og:description"
-      content="申込・相談・売上につながる導線を設計します。"
-    />
+    <title>そらいろ｜マーケティングデザイン</title>
+    <meta name="description" content="SNS運用、公式LINE運用、教材制作。そらいろが集客から販売まで、成果につながる導線を設計します。" />
+    <meta property="og:title" content="そらいろ｜マーケティングデザイン" />
+    <meta property="og:description" content="コミュニティやスクールなどの無形商材を中心に、集客から販売までを一連の流れとして設計・改善します。" />
     <meta property="og:type" content="website" />
-    <link rel="preload" href="assets/hero-funnel.png" as="image" />
-    <link rel="preload" href="assets/profile-photo.jpg" as="image" />
+    <meta property="og:locale" content="ja_JP" />
     <link rel="icon" href="assets/site-icon.png" type="image/png" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preload" as="image" href="assets/marketing-workspace.png" media="(min-width: 701px)" />
+    <script defer src="assets/lucide.min.js"></script>
+    <script defer src="script.js"></script>
   </head>
   <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="site-logo" href="#top" aria-label="トップへ">
-          <img
-            class="site-logo-image"
-            src="assets/sorairo-logo.png"
-            alt="そらいろ"
-            width="1000"
-            height="700"
-          />
+    <a class="skip-link" href="#main">本文へ</a>
+    <header class="site-header" id="top">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="そらいろ ホーム">
+          <img src="assets/sorairo-logo.png" alt="そらいろ" width="1000" height="700" />
         </a>
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-          <span class="sr-only">メニューを開く</span>
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M4 7h16M4 12h16M4 17h16" />
-          </svg>
-        </button>
-        <nav class="site-nav" id="site-nav" aria-label="メインナビゲーション">
-          <a href="#works">実績集</a>
-          <a href="#profile">プロフィール</a>
-          <a href="#services">支援できること</a>
-          <a href="#contact">お問い合わせ</a>
+        <button class="menu-toggle icon-button" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="メニューを開く" title="メニューを開く"><i data-lucide="menu" aria-hidden="true"></i></button>
+        <nav class="main-nav" id="main-nav" aria-label="メインナビゲーション">
+          <a href="#works"><span lang="en">Works</span><small>実績</small></a>
+          <a href="#about"><span lang="en">About</span><small>プロフィール</small></a>
+          <a href="#services"><span lang="en">Service</span><small>支援できること</small></a>
+          <a class="nav-contact" href="#contact"><span lang="en">Contact</span><small>お問い合わせ</small><i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
         </nav>
       </div>
     </header>
 
-    <main id="top">
-      <section class="hero section">
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow">Marketing Flow Design</p>
-            <h1>
-              <span>申込・相談・売上に</span>
-              <span>つながる導線を設計します。</span>
-            </h1>
-            <p class="hero-lead">
-              コミュニティやスクールなどの無形商材を中心に、集客〜販売までを一連の流れとして設計・改善します。
-            </p>
-            <div class="hero-actions">
-              <a
-                class="button button-primary"
-                href="#contact"
-              >
-                お問い合わせ
-              </a>
-            </div>
-          </div>
-          <figure class="hero-visual">
-            <img
-              src="assets/hero-funnel.png"
-              alt="マーケティング導線と成長グラフを表すイラスト"
-              width="1586"
-              height="992"
-            />
-          </figure>
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-inner container">
+          <p class="eyebrow" lang="en">SORAIRO / MARKETING &amp; CONTENT</p>
+          <h1 id="hero-title">成果につながる<br /><span>導線を設計します。</span></h1>
+          <p class="hero-lead">コミュニティやスクールなどの無形商材を中心に、<br class="desktop-break" />集客〜販売までを一連の流れとして設計・改善します。</p>
+          <a class="button" href="#contact">お問い合わせ<i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <div class="hero-bottom"><a href="#works" aria-label="実績を見る"><span lang="en">SCROLL</span><i data-lucide="arrow-down" aria-hidden="true"></i></a></div>
         </div>
       </section>
 
-      <section class="section light-section" id="works">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Works</p>
-            <h2>実績集</h2>
-          </div>
-          <div class="works-grid">
-            <article class="work-card">
-              <span class="card-number">1</span>
-              <div class="card-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24">
-                  <path d="M4.5 16.5c-1.1 1.1-1.7 2.6-1.7 4.2 1.6 0 3.1-.6 4.2-1.7" />
-                  <path d="M9 15 4 20" />
-                  <path d="M14.5 5.5 18.5 9.5" />
-                  <path d="M8 16c-1-3.4 0-7.1 2.7-9.8 2.6-2.6 6.4-3.7 9.9-2.8.8 3.5-.2 7.3-2.8 9.9C15.1 16 11.4 17 8 16Z" />
-                  <path d="M13.5 10.5h.01" />
-                </svg>
-              </div>
-              <div>
-                <h3>Xローンチ</h3>
-                <p><strong>1,000万円</strong>の<br />売上に貢献</p>
-              </div>
-            </article>
-            <article class="work-card">
-              <span class="card-number">2</span>
-              <div class="card-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24">
-                  <rect x="3" y="3" width="18" height="18" rx="5" />
-                  <circle cx="12" cy="12" r="4" />
-                  <path d="M17.5 6.5h.01" />
-                </svg>
-              </div>
-              <div>
-                <h3>Instagramローンチ</h3>
-                <p><strong>500万円</strong>の<br />売上に貢献</p>
-              </div>
-            </article>
-            <article class="work-card">
-              <span class="card-number">3</span>
-              <div class="card-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24">
-                  <path d="M8 19a4 4 0 0 1 8 0" />
-                  <circle cx="12" cy="11" r="3" />
-                  <path d="M17 8.5h1.5a2.5 2.5 0 0 1 0 5H17l-2 2v-2" />
-                  <path d="M7 8.5H5.5a2.5 2.5 0 0 0 0 5H7l2 2v-2" />
-                </svg>
-              </div>
-              <div>
-                <h3>英語発音領域</h3>
-                <p>月<strong>150名規模</strong>の<br />個別相談誘導</p>
-              </div>
-            </article>
-            <article class="work-card">
-              <span class="card-number">4</span>
-              <div class="card-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24">
-                  <path d="M8 21h8" />
-                  <path d="M12 17v4" />
-                  <path d="M7 4h10v6a5 5 0 0 1-10 0V4Z" />
-                  <path d="M17 6h3v3a4 4 0 0 1-4 4" />
-                  <path d="M7 6H4v3a4 4 0 0 0 4 4" />
-                </svg>
-              </div>
-              <div>
-                <h3>Brainコンテンツ販売</h3>
-                <p>ジャンル別<strong>1位</strong>を<br />獲得</p>
-              </div>
-            </article>
-            <article class="work-card">
-              <span class="card-number">5</span>
-              <div class="card-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24">
-                  <circle cx="12" cy="8" r="3" />
-                  <path d="M5 20a7 7 0 0 1 14 0" />
-                  <path d="M4 10a2.5 2.5 0 0 0 0 5" />
-                  <path d="M20 10a2.5 2.5 0 0 1 0 5" />
-                  <path d="M2 20a5 5 0 0 1 4.5-5" />
-                  <path d="M22 20a5 5 0 0 0-4.5-5" />
-                </svg>
-              </div>
-              <div>
-                <h3>AI領域セミナー誘導</h3>
-                <p>月<strong>1,100名超</strong>を<br />達成</p>
-              </div>
-            </article>
-            <article class="work-card">
-              <span class="card-number">6</span>
-              <div class="card-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24">
-                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-                  <path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15Z" />
-                  <path d="M8 7h8" />
-                  <path d="M8 11h8" />
-                </svg>
-              </div>
-              <div>
-                <h3>教材制作</h3>
-                <p>複数の<strong>高単価コンテンツ</strong><br />作成経験</p>
-              </div>
-            </article>
+      <section class="section container works-section" id="works" aria-labelledby="works-title">
+        <div class="section-heading"><h2 id="works-title"><span class="title-en" lang="en">Works</span><span class="title-ja">実績</span></h2></div>
+        <div class="works-grid">
+          <article class="work-card work-cyan">
+            <div class="work-result"><span class="work-number">01</span><i data-lucide="rocket" aria-hidden="true"></i><p><strong>1,000<span>万円</span></strong><span class="result-label">売上に貢献</span></p></div>
+            <div class="work-body"><span class="work-category" lang="en">X / LAUNCH</span><h3>Xローンチ</h3><p>Xローンチにて、1,000万円の売上に貢献。</p></div>
+          </article>
+          <article class="work-card work-coral">
+            <div class="work-result"><span class="work-number">02</span><i data-lucide="instagram" aria-hidden="true"></i><p><strong>500<span>万円</span></strong><span class="result-label">売上に貢献</span></p></div>
+            <div class="work-body"><span class="work-category" lang="en">INSTAGRAM / LAUNCH</span><h3>Instagramローンチ</h3><p>Instagramローンチにて、500万円の売上に貢献。</p></div>
+          </article>
+          <article class="work-card work-mint">
+            <div class="work-result"><span class="work-number">03</span><i data-lucide="messages-square" aria-hidden="true"></i><p><strong>150<span>名 / 月</span></strong><span class="result-label">個別相談へ誘導</span></p></div>
+            <div class="work-body"><span class="work-category" lang="en">ENGLISH / CONSULTATION</span><h3>英語発音領域</h3><p>月150名規模の個別相談誘導を支援。</p></div>
+          </article>
+          <article class="work-card work-mint">
+            <div class="work-result"><span class="work-number">04</span><i data-lucide="trophy" aria-hidden="true"></i><p><strong>1<span>位</span></strong><span class="result-label">ジャンル別ランキング</span></p></div>
+            <div class="work-body"><span class="work-category" lang="en">BRAIN / CONTENT</span><h3>Brainコンテンツ販売</h3><p>Brainコンテンツ販売で、ジャンル別1位を獲得。</p></div>
+          </article>
+          <article class="work-card work-cyan">
+            <div class="work-result"><span class="work-number">05</span><i data-lucide="users" aria-hidden="true"></i><p><strong>1,100<span>名超 / 月</span></strong><span class="result-label">セミナーへ誘導</span></p></div>
+            <div class="work-body"><span class="work-category" lang="en">AI / SEMINAR</span><h3>AI領域セミナー誘導</h3><p>月1,100名超のセミナー誘導を達成。</p></div>
+          </article>
+          <article class="work-card work-coral">
+            <div class="work-result"><span class="work-number">06</span><i data-lucide="book-open" aria-hidden="true"></i><p><strong class="text-result">教材制作</strong><span class="result-label">高単価コンテンツ</span></p></div>
+            <div class="work-body"><span class="work-category" lang="en">LEARNING / CONTENT</span><h3>教材・コンテンツ制作</h3><p>複数の高単価コンテンツの作成経験。</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="about-band" id="about" aria-labelledby="about-title">
+        <div class="section container">
+          <div class="section-heading"><h2 id="about-title"><span class="title-en" lang="en">About</span><span class="title-ja">プロフィール</span></h2></div>
+          <div class="about-layout">
+            <figure class="profile"><img src="assets/profile-photo.jpg" alt="屋外で座るそらいろのプロフィール写真" width="240" height="320" loading="lazy" /><figcaption><span>そらいろ</span><small lang="en">Marketing &amp; Content Partner</small></figcaption></figure>
+            <div class="profile-text"><h3>想いを、届くかたちに。<br />集客から販売まで、伴走します。</h3><p>2020年3月に大学を卒業し、4月より地元静岡のIT企業に入社。HP制作やツールを使った業務効率化などの業務に従事しました。</p><p>2022年2月に退職後、フリーランスとして活動を開始。SNSマーケティングや動画編集事業に携わり、SNS運用、公式LINE運用、メルマガ運用、コンテンツ制作、導線設計などを中心に支援しています。</p><p>趣味は、スポーツ観戦やビール、漫画を読むことです。<br />今年の目標は、できるだけ多くのグルメを楽しむこと。美味しい食べ物を巡ることに夢中になっています。</p></div>
           </div>
         </div>
       </section>
 
-      <section class="section" id="profile">
-        <div class="container profile-grid">
-          <div class="profile-image">
-            <img
-              src="assets/profile-photo.jpg"
-              alt="屋外で座っているプロフィール写真"
-              width="240"
-              height="320"
-            />
-          </div>
-          <div class="profile-copy">
-            <div class="section-heading align-left">
-              <p class="eyebrow">Profile</p>
-              <h2>プロフィール</h2>
-            </div>
-            <p>
-              2020年3月に大学を卒業し、4月より地元静岡のIT企業に入社。HP制作やツールを使った業務効率化などの業務に従事しました。
-            </p>
-            <p>
-              2022年2月に退職後、フリーランスとして活動を開始。SNSマーケティングや動画編集事業に携わり、SNS運用、公式LINE運用、メルマガ運用、コンテンツ制作、導線設計などを中心に支援しています。
-            </p>
-            <p>
-              趣味は、スポーツ観戦やビール、漫画を読むことです。今年の目標は、できるだけ多くのグルメを楽しむこと。美味しい食べ物を巡ることに夢中になっています。
-            </p>
-          </div>
+      <section class="section container services-section" id="services" aria-labelledby="services-title">
+        <div class="section-heading"><h2 id="services-title"><span class="title-en" lang="en">Service</span><span class="title-ja">支援できること</span></h2></div>
+        <div class="service-list">
+          <article class="service-row"><span class="service-number">01</span><div class="service-title"><i data-lucide="send" aria-hidden="true"></i><h3>SNS運用</h3><small lang="en">Social Media</small></div><div class="service-description"><p>Xを中心に、投稿企画・ライティング・数値確認・改善提案まで対応します。投稿単体ではなく、LINE登録やセミナー誘導など、次の行動につながる運用を意識しています。</p><div class="service-tags"><span>投稿企画</span><span>ライティング</span><span>分析・改善</span></div></div></article>
+          <article class="service-row"><span class="service-number">02</span><div class="service-title"><i data-lucide="message-circle" aria-hidden="true"></i><h3>公式LINE運用</h3><small lang="en">LINE Marketing</small></div><div class="service-description"><p>LINE登録後のあいさつメッセージ、ステップ配信、教育配信、セミナー誘導、個別相談誘導まで対応します。登録して終わりではなく、申込や相談につながる流れを設計します。</p><div class="service-tags"><span>ステップ配信</span><span>教育配信</span><span>相談・申込導線</span></div></div></article>
+          <article class="service-row"><span class="service-number">03</span><div class="service-title"><i data-lucide="book-open" aria-hidden="true"></i><h3>教材制作</h3><small lang="en">Learning Content</small></div><div class="service-description"><p>講座、スクール、コンテンツ販売などにおける教材制作をサポートします。ユーザーの悩みや理解度に合わせて、学びやすく、行動につながるコンテンツ構成・文章作成を行います。</p><div class="service-tags"><span>コンテンツ構成</span><span>文章作成</span><span>教材制作</span></div></div></article>
         </div>
       </section>
 
-      <section class="section light-section" id="services">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Services</p>
-            <h2>支援できること</h2>
-          </div>
-          <div class="service-grid">
-            <article class="service-card">
-              <div class="service-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24">
-                  <path d="M22 2 11 13" />
-                  <path d="M22 2 15 22 11 13 2 9 22 2Z" />
-                </svg>
-              </div>
-              <h3>SNS運用</h3>
-              <p>
-                Xを中心に、投稿企画・ライティング・数値確認・改善提案まで対応します。投稿単体ではなく、LINE登録やセミナー誘導など、次の行動につながる運用を意識しています。
-              </p>
-            </article>
-            <article class="service-card">
-              <div class="service-icon service-icon-solid" aria-hidden="true">
-                <span>LINE</span>
-              </div>
-              <h3>公式LINE運用</h3>
-              <p>
-                LINE登録後のあいさつメッセージ、ステップ配信、教育配信、セミナー誘導、個別相談誘導まで対応します。登録して終わりではなく、申込や相談につながる流れを設計します。
-              </p>
-            </article>
-            <article class="service-card">
-              <div class="service-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24">
-                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-                  <path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15Z" />
-                </svg>
-              </div>
-              <h3>教材制作</h3>
-              <p>
-                講座、スクール、コンテンツ販売などにおける教材制作をサポートします。ユーザーの悩みや理解度に合わせて、学びやすく、行動につながるコンテンツ構成・文章作成を行います。
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="contact-section" id="contact">
-        <div class="container contact-inner">
-          <p class="eyebrow">Contact</p>
-          <h2>お問い合わせ</h2>
-          <p>
-            SNS運用、公式LINE運用、教材制作、マーケティング導線の設計・改善など、お気軽にご相談ください。
-          </p>
-          <a
-            class="button button-primary button-large"
-            href="mailto:kkawanabe@srir.jp?subject=%E3%83%9D%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%AA%E3%82%AA%E3%82%B5%E3%82%A4%E3%83%88%E3%81%8B%E3%82%89%E3%81%AE%E3%81%94%E7%9B%B8%E8%AB%87"
-          >
-            ご相談はこちら
-          </a>
-          <p class="contact-mail">遷移しない場合は kkawanabe@srir.jp までご連絡ください。</p>
+      <section class="contact-band" id="contact" aria-labelledby="contact-title">
+        <div class="section container contact-layout">
+          <div><h2 id="contact-title"><span class="title-en" lang="en">Contact</span><span class="title-ja">お問い合わせ</span></h2><p class="contact-catch">次の一歩を、<br />一緒につくりませんか。</p></div>
+          <div class="contact-content"><p>SNS運用、公式LINE運用、教材制作、マーケティング導線の設計・改善など、お気軽にご相談ください。</p><a class="button" href="mailto:kkawanabe@srir.jp?subject=%E3%83%9D%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%AA%E3%82%AA%E3%82%B5%E3%82%A4%E3%83%88%E3%81%8B%E3%82%89%E3%81%AE%E3%81%94%E7%9B%B8%E8%AB%87">ご相談はこちら<i data-lucide="arrow-up-right" aria-hidden="true"></i></a><p class="mail-note">メール画面に遷移しない場合は、下記までご連絡ください。</p><div class="email-row"><a href="mailto:kkawanabe@srir.jp?subject=%E3%83%9D%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%AA%E3%82%AA%E3%82%B5%E3%82%A4%E3%83%88%E3%81%8B%E3%82%89%E3%81%AE%E3%81%94%E7%9B%B8%E8%AB%87">kkawanabe@srir.jp</a><button class="icon-button copy-email" type="button" aria-label="メールアドレスをコピー" title="メールアドレスをコピー"><i data-lucide="copy" aria-hidden="true"></i></button></div><p class="copy-status" role="status" aria-live="polite"></p></div>
         </div>
       </section>
     </main>
-
-    <footer class="site-footer">
-      <div class="container">
-        <small>&copy; 2026 Marketing Flow Design Portfolio</small>
-      </div>
-    </footer>
-
-    <script src="script.js"></script>
+    <footer class="site-footer container"><a class="brand" href="#top" aria-label="そらいろ ページの先頭へ"><img src="assets/sorairo-logo.png" alt="そらいろ" width="1000" height="700" loading="lazy" /></a><small lang="en">&copy; Sorairo. All rights reserved.</small><a class="back-top icon-button" href="#top" aria-label="ページの先頭へ" title="ページの先頭へ"><i data-lucide="arrow-up" aria-hidden="true"></i></a></footer>
   </body>
 </html>
