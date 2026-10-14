@@ -86,6 +86,9 @@ h2 { display: flex; align-items: baseline; gap: 24px; font-weight: 400; flex-wra
 .service-title svg { width: 25px; height: 25px; color: var(--accent); margin-bottom: 9px; }
 .service-title h3 { font-family: var(--serif); font-size: 23px; font-weight: 500; }
 .service-title small { font: 12px/1.5 var(--serif); color: var(--muted); }
+.service-description {
+  align-self: center;
+}
 .service-description p { color: var(--muted); font-size: 14px; line-height: 2.1; }
 .contact-band { background: var(--sky); }
 .contact-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
